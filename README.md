@@ -17,7 +17,7 @@ For example in `footer.part`:
 ```html
 <footer>
     Copyright 2024
-</footer
+</footer>
 ```
 
 In your HTML pages, use a partial tag like `{{{ partial: footer }}}` to reference the partial you want:
