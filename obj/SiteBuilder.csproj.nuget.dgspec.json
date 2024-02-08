@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj": {}
+    "c:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj": {}
   },
   "projects": {
-    "C:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj": {
+    "c:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj",
+        "projectUniqueName": "c:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj",
         "projectName": "SiteBuilder",
-        "projectPath": "C:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj",
+        "projectPath": "c:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj",
         "packagesPath": "C:\\Users\\Cole\\.nuget\\packages\\",
-        "outputPath": "C:\\Knut\\Projects\\dotnet\\SiteBuilder\\obj\\",
+        "outputPath": "c:\\Knut\\Projects\\dotnet\\SiteBuilder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cole\\AppData\\Roaming\\NuGet\\NuGet.Config"

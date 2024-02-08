@@ -12,3 +12,4 @@ C:\Knut\Projects\dotnet\SiteBuilder\obj\Debug\net8.0\refint\SiteBuilder.dll
 C:\Knut\Projects\dotnet\SiteBuilder\obj\Debug\net8.0\SiteBuilder.pdb
 C:\Knut\Projects\dotnet\SiteBuilder\obj\Debug\net8.0\SiteBuilder.genruntimeconfig.cache
 C:\Knut\Projects\dotnet\SiteBuilder\obj\Debug\net8.0\ref\SiteBuilder.dll
+c:\Knut\Projects\dotnet\SiteBuilder\obj\Debug\net8.0\SiteBuilder.sourcelink.json

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sGJyoAnW//pxt+p3i+CrqNzCpAHGnP4dQT6VKeZ9fmukWkB46nbqneiBLO/t3yPEKk6zwKtMv5e/tb3r80bfpw==",
+  "dgSpecHash": "o6WIHlF0s3gn/qq6kkkYx337HNW9/XiX4wxPUsoQ3gcncOtIkR3fDkvoizNsUc4fErg6zrr0sGTuFerfV6ZTfA==",
   "success": true,
-  "projectFilePath": "C:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj",
+  "projectFilePath": "c:\\Knut\\Projects\\dotnet\\SiteBuilder\\SiteBuilder.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

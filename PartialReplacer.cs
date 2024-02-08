@@ -12,12 +12,11 @@ public class PartialReplacer
     public PartialReplacer(string partialsDir)
     {
         this._partialsDir = partialsDir;
-        // Console.WriteLine("PARTIAL FOLDER: " + partialsDir);
     }
 
     public void CopyAndCompile(string sourcePath, string destinationPath)
     {
-        Console.WriteLine($"  Compile {sourcePath} to  {destinationPath}");
+        Console.WriteLine($" Compile {sourcePath} to  {destinationPath}");
 
         var inputHtml = File.ReadAllText(sourcePath);
         var outputHtml = ReplaceAllPartials(inputHtml);

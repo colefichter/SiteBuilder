@@ -7,12 +7,15 @@ public class FileNavigator
     public const string DIST = @"DIST\";
     public const string PARTIALS = @"_PARTIALS";
     public const string HTML_EXT = @".html";
+    public const string SITEBUILDER_PREFIX = @"sitebuilder";
 
     private readonly string? _baseDir;
+    private readonly string? _partialsDir;
 
     public FileNavigator(string baseDir)
     {
         this._baseDir = baseDir;
+        this._partialsDir = Path.Combine(this._baseDir!, PARTIALS);
     }
 
     public void Run()
@@ -36,7 +39,7 @@ public class FileNavigator
         CopyFiles(currentDir, destinationDir);
     }
 
-    private bool Ignore(string path, string destinationDir)
+    private static bool Ignore(string path, string destinationDir)
     {
         return path.ToLower().StartsWith(destinationDir.ToLower()) ||
                 path.ToLower().Contains(PARTIALS.ToLower());
@@ -48,7 +51,7 @@ public class FileNavigator
 
         foreach (string f in files)
         {
-            if (Path.GetFileName(f).ToLower().StartsWith("sitebuilder")) {
+            if (Path.GetFileName(f).ToLower().StartsWith(SITEBUILDER_PREFIX)) {
                 continue;
             }
 
@@ -63,12 +66,12 @@ public class FileNavigator
         }
     }
 
-    private void CopyInertFile(string sourcePath, string baseDir, string destinationDir)
+    private static void CopyInertFile(string sourcePath, string baseDir, string destinationDir)
     {
         var relPath = Path.GetRelativePath(baseDir, sourcePath);
         var destinationPath = Path.Combine(destinationDir, relPath);
 
-        Console.WriteLine($"Copy {sourcePath} to {destinationPath}");
+        Console.WriteLine($" Copy {sourcePath} to {destinationPath}");
 
         Directory.CreateDirectory(Path.GetDirectoryName(destinationPath)!);
         File.Copy(sourcePath, destinationPath);
@@ -76,10 +79,9 @@ public class FileNavigator
 
     private void CopyCompiledFile(string sourcePath, string baseDir, string destinationDir) {
         var relPath = Path.GetRelativePath(baseDir, sourcePath);
-        var destinationPath = Path.Combine(destinationDir, relPath);
-        var partialsDir = Path.Combine(this._baseDir!, PARTIALS);
+        var destinationPath = Path.Combine(destinationDir, relPath); 
 
-        var compiler = new PartialReplacer(partialsDir);
+        var compiler = new PartialReplacer(this._partialsDir!);
         compiler.CopyAndCompile(sourcePath, destinationPath);
     }
 
@@ -96,5 +98,4 @@ public class FileNavigator
 
         return destination;
     }
-
 }
