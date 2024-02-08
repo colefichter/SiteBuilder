@@ -3,6 +3,8 @@ Site Builder tool
 
 This tool is a very lightweight site building tool for simple HTML brochure sites.
 
+It really only has one feature: a `{{{ partial: name }}}` tag that allows you to reuse small blocks of markup in multiple files.
+
 Usage
 -----
 Place the contents of the Release build folder into the root of your HTML website.
